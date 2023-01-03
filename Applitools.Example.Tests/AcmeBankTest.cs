@@ -58,7 +58,7 @@ public class AcmeBankTest
         // Create a new batch for tests.
         // A batch is the collection of visual checkpoints for a test suite.
         // Batches are displayed in the dashboard, so use meaningful names.
-        Batch = new BatchInfo("Example: Selenium C# NUnit with the Ultrafast Grid");
+        Batch = new BatchInfo("Example: Selenium C# MSTest with the Ultrafast Grid");
 
         // Create a configuration for Applitools Eyes.
         Config = new Configuration();
@@ -156,10 +156,10 @@ public class AcmeBankTest
 
         // Warning: `Eyes.CloseAsync()` will NOT wait for visual checkpoints to complete.
         // You will need to check the Applitools dashboard for visual results per checkpoint.
-        // Note that "unresolved" and "failed" visual checkpoints will not cause the NUnit test to fail.
+        // Note that "unresolved" and "failed" visual checkpoints will not cause the test to fail.
 
-        // If you want the NUnit test to wait synchronously for all checkpoints to complete, then use `Eyes.Close()`.
-        // If any checkpoints are unresolved or failed, then `Eyes.Close()` will make the NUnit test fail.
+        // If you want the test to wait synchronously for all checkpoints to complete, then use `Eyes.Close()`.
+        // If any checkpoints are unresolved or failed, then `Eyes.Close()` will make the test fail.
     }
 
     /// <summary>
@@ -169,7 +169,7 @@ public class AcmeBankTest
     public static void PrintResults()
     {
         // Close the batch and report visual differences to the console.
-        // Note that it forces NUnit to wait synchronously for all visual checkpoints to complete.
+        // Note that it forces MSTest to wait synchronously for all visual checkpoints to complete.
         TestResultsSummary allTestResults = Runner.GetAllTestResults();
         Console.WriteLine(allTestResults);
     }
