@@ -1,3 +1,3 @@
-# Applitools Example: Selenium C# MsTest with the Ultrafast Grid
+# Applitools Example: Selenium C# MSTest with the Ultrafast Grid
 
 TBD
