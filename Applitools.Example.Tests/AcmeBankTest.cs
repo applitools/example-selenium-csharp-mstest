@@ -112,7 +112,7 @@ public class AcmeBankTest
         Eyes.Open(
             Driver,                         // WebDriver object to "watch"
             "ACME Bank Web App",            // The name of the app under test
-            TestContext.TestName,                       // The name of the test case
+            TestContext.TestName,           // The name of the test case
             new Size(1024, 768));           // The viewport size for the local browser
     }
 
