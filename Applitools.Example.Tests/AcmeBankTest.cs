@@ -20,7 +20,7 @@ public class AcmeBankTest
 
     // Test constants
     public const bool UseUltrafastGrid = true;
-    public const bool UseExecutionCloud = true;
+    public const bool UseExecutionCloud = false;
 
     // Context for the current test (set by MSTest during runtime)
     public TestContext TestContext { get; set; }
