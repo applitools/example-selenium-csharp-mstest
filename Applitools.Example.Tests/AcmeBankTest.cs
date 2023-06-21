@@ -155,7 +155,7 @@ public class AcmeBankTest
             // The viewport size for the local browser.
             // Eyes will resize the web browser to match the requested viewport size.
             // This parameter is optional but encouraged in order to produce consistent results.
-            new Size(1024, 768));
+            new Size(1200, 600));
     }
 
     /// <summary>
